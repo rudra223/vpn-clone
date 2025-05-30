@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import "tailwindcss";
+
+html{
+    scroll-behavior: smooth;
+}
+
+@theme{
+    --font-primary: "Rubik", sans-serif;
+    --color-primary: #F53838;
+    --color-secondary: rgba(245,56,56,0.35);
+    --color-primary-text: #4F5665;
+    --color-heading-text: #0B132A;
+     
+}
+
+@layer{
+    .section-container{
+        @apply w-full container px-4 py-16 mx-auto;
+    }
+}
+
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: "" !important;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: '' !important;
+}
